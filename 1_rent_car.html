@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/rent.css">
+</head>
+<body>
+    <div class="container">
+        <section class="top-nav">
+            <div class="logo">
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="1_rent_car.html">Аренда</a></li>
+                <li><a href="2_how_rent.html">Как арендовать?</a></li>
+                <li><a href="3_car_leasing.html">Лизинг</a></li>
+                <li><a href="4_about_us.html">О нас</a></li>
+            </ul>
+        </section>
+        <header>
+                <div class="logo"></div>
+                <div class="nav">
+                    <a class="nav-item" href="1_rent_car.html">Аренда</a>
+                    <a class="nav-item" href="2_how_rent.html">Как арендовать?</a>
+                    <a class="nav-item" href="3_car_leasing.html">Лизинг</a>
+                    <a class="nav-item" href="4_about_us.html">О нас</a>
+                </div>
+        </header>
+            <div class="bg-line">
+                <h1 class="head">Аренда авто</h1>
+                <h2 class="subtitle">Надежные автомобили для любых поездок в Нижнем Новгороде</h2>
+            </div>
+    </div>
+
+        <!-- Карусель карточек -->
+        <section class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Карточка 1 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car1.jpg" alt="Toyota Camry">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Toyota Camry</h3>
+                            <p class="car-text">Комфортный седан бизнес-класса. Автомат, кондиционер, полный электропакет.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car2.jpg" alt="Hyundai Solaris">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Hyundai Solaris</h3>
+                            <p class="car-text">Экономичный городской хэтчбек. Идеален для ежедневных поездок.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car3.jpg" alt="Kia Rio">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Kia Seltos</h3>
+                            <p class="car-text">Надежный хэтчбек с отличной управляемостью. Высокий уровень комфорта.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car4.webp" alt="Volkswagen Polo">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Volkswagen Polo</h3>
+                            <p class="car-text">Немецкое качество и надежность. Компактный и экономичный.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car5.webp" alt="Skoda Octavia">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Skoda Octavia</h3>
+                            <p class="car-text">Просторный лифтбек премиум-класса. Высокий уровень комфорта.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 6 -->
+                    <div class="car-card">
+                        <div class="car-img">
+                            <img src="img/car6.webp" alt="Renault Logan">
+                        </div>
+                        <div class="car-body">
+                            <h3 class="car-title">Renault Logan</h3>
+                            <p class="car-text">Универсальный седан для семьи. Большой багажник и низкая стоимость.</p>
+                            <button class="car-btn open-modal">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Стрелки карусели -->
+                <button class="carousel-prev">❮</button>
+                <button class="carousel-next">❯</button>
+            </div>
+        </section>
+
+        <!-- Модальное окно формы -->
+        <div id="bookingModal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Забронировать авто</h2>
+                    <span class="modal-close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label>Имя:</label>
+                            <input type="text" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон:</label>
+                            <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Дата аренды:</label>
+                            <input type="date" required>
+                        </div>
+                        <button type="submit" class="form-submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+<script src="js/rent.js"></script>
+</body>
+</html>

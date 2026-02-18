@@ -1,0 +1,118 @@
+
+html{
+    background: black;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url(../img/logo.jpg);
+    width: 20vw;
+    height: auto;
+    background-size: cover;
+    aspect-ratio: 2/1;
+}
+.nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: white;
+}
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: calc(1vw + 0.8rem);
+    font-family: nav;
+    color: white;
+    text-decoration: none;
+}
+.nav-item:hover{
+    text-shadow: 5px 5px 5px white, 1px 1px 1px gray;
+    color: white;
+}
+@font-face {
+    font-family: bgline;
+    src: url(../font/TTInters.otf);
+}
+@font-face {
+    font-family: nav;
+    src: url(../font/Genzsch.ttf);
+}
+.bg-line{
+    background: url(../img/tape.webp) no-repeat;
+    aspect-ratio: 3/1;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-direction: column;
+}
+.head{
+    align-self: center;
+    font-size: calc(1vw + 3.5rem);
+    font-family: bgline;
+    letter-spacing: calc(1vw + 10px);
+    text-shadow: 3px 3px 2px rgb(94, 92, 92);
+    color: white;
+}
+.line{
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+}
+.img1,.img2{
+    width: 50%;
+    object-fit: scale-down;
+}
+.text1,.text2{
+    width: 50%;
+    font-size: calc(1vw + 0.6rem);
+    color: white;
+}
+.img1 img,.img2 img{
+    width: 100%;
+    height: auto;
+}
+.text1{
+    margin-right: 20px;
+}
+.text2{
+    margin-left: 20px;
+}
+footer{
+    color: white;
+    display: flex;
+    width: 100%;
+    background-color: blueviolet;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.footer-nav-item{
+    font-size: calc(0.2em + 1vw);
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.subtitle {
+    text-align: center;
+    font-size: calc(1vw + 1rem);
+    font-family: bgline;
+    letter-spacing: calc(1vw + 2px);
+    text-shadow: 3px 3px 2px rgb(94, 92, 92);
+    color: white;
+}

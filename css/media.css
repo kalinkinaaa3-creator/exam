@@ -1,0 +1,82 @@
+@media(max-width:700px)
+{
+    .top-nav{
+        display: flex !important;
+    }
+    header{
+        display: none;
+    }
+    .line{
+        flex-direction: column-reverse;
+        border: 3px white solid;
+        border-radius: 10px;
+    }
+    .line ~.line{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .icons{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .logo{
+        background: url(../img/logo.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        height: 45px;
+        width: auto;
+        aspect-ratio: 2/1;
+    }
+    .text1,.text2{
+        margin: 10px 0 0 0;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .img1,.img2{
+        width: 100%;
+    }
+    .menu a {
+        color: white !important;
+        text-decoration: none;
+    }
+
+
+
+
+    .carousel-container {
+        margin: 40px 10px;
+        padding: 0;
+    }
+    
+    .car-card {
+        flex: 0 0 280px;
+    }
+
+    .carousel-section {
+        padding: 10px 0;
+    }
+    
+    .carousel-container {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    
+    .carousel-wrapper {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    
+
+.head, .subtitle{
+    letter-spacing: 1rem;
+    text-align: center;
+}
+.footer-nav-item{
+    font-size: calc(0.5em + 1vw);
+}
+}
+
+
