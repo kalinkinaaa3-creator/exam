@@ -68,6 +68,13 @@
         padding: 15px;
         border-radius: 15px;
     }
+    .text-block {
+        padding: 50px 0;
+    }
+    
+    .text-content {
+        padding: 0 15px;
+    }
     
 
 .head, .subtitle{
@@ -78,5 +85,8 @@
     font-size: calc(0.5em + 1vw);
 }
 }
+
+
+
 
 
