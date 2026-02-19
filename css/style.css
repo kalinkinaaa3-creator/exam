@@ -112,7 +112,7 @@ footer{
     text-align: center;
     font-size: calc(1vw + 1rem);
     font-family: bgline;
-    letter-spacing: calc(1vw + 2px);
+    letter-spacing: 1vw;
     text-shadow: 3px 3px 2px rgb(94, 92, 92);
     color: white;
 }
